@@ -1,6 +1,8 @@
 from django.http import HttpResponse
+from django.shortcus import redirect
 
-
-def inde(request):
+def index(request):
     return HttpREspone("index")
 
+def login(request):
+    return Redirect('./index')
